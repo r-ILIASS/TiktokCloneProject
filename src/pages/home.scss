@@ -1,0 +1,16 @@
+.home {
+  position: relative;
+  top: 54px;
+  display: flex;
+  flex-direction: row;
+
+  .feed {
+    width: 500px;
+  }
+
+  .suggested-box {
+    background-color: blue;
+    width: 400px;
+    height: 400px;
+  }
+}
