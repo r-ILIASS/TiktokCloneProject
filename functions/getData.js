@@ -12,12 +12,11 @@ exports.handler = async function (event, context) {
     .collection("messages");
 
   try {
-    const message = await messageCollection.create("hello message", {
-      text: "hello friends",
-    });
+    const result = await messageCollection.find({});
+    console.log(result);
     return {
       statusCode: 200,
-      body: JSON.stringify(message),
+      body: JSON.stringify(result),
     };
   } catch (error) {
     console.log(error);
