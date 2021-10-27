@@ -1,6 +1,6 @@
 const { createClient } = require("@astrajs/collections");
 
-const collection = "posts";
+const collection = "tiktokposts";
 
 exports.handler = async function (event, context) {
   const astraClient = await createClient({
@@ -14,9 +14,7 @@ exports.handler = async function (event, context) {
     .collection(collection);
 
   try {
-    const post = await posts.create("post2", {
-      title: "my second post",
-    });
+    const post = await posts.create();
     return {
       statusCode: 200,
       body: JSON.stringify(post),
