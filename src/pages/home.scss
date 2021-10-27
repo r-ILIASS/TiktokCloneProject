@@ -1,16 +1,16 @@
 .home {
-  position: relative;
-  top: 54px;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  // .feed {
+  //   width: 100%;
+  //   height: 100%;
+  //   border: solid red 1px;
+  // }
 
-  .feed {
-    width: 500px;
-  }
+  // .suggested-box {
+  //   border: solid blue 1px;
 
-  .suggested-box {
-    background-color: blue;
-    width: 400px;
-    height: 400px;
-  }
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }

@@ -4,8 +4,15 @@ export default function Home() {
   return (
     <div className="home">
       <FollowersColumn />
-      <div className="feed">feed</div>
-      <div className="suggested-box">suggested box</div>
+      <div className="feed">test</div>
+      <div className="suggested-box">
+        <div className="section">
+          <div className="suggested">
+            <h2>Suggested accounts</h2>
+            <div className="break"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
